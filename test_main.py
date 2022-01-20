@@ -9,6 +9,7 @@ class TestMain(unittest.TestCase):
 
     def test_get_api(self):
         for req in p.get_api():
+            #assert
             assert type(req['name']) is str
 
     def test_collect_starships(self):

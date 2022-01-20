@@ -48,4 +48,4 @@ if __name__=="__main__":
     starwarsObject = StarWarsData(url=url_api)
     #starwarsObject.load_data_directly() # this load data directly into mongodb
     r = starwarsObject.get_api()
-    print(r['name'])
+    #print(r['name'])
