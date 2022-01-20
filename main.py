@@ -46,4 +46,6 @@ if __name__=="__main__":
 
     url_api = 'https://www.swapi.tech/api/starships/'
     starwarsObject = StarWarsData(url=url_api)
-    starwarsObject.load_data_directly()
+    #starwarsObject.load_data_directly() # this load data directly into mongodb
+    r = starwarsObject.get_api()
+    print(r['name'])
